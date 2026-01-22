@@ -9,11 +9,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-white shadow px-6 py-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold text-primary">Task Manager</h1>
+    <div className="bg-black/90  shadow px-6 py-4 flex justify-between items-center">
+      <h1 className="text-xl font-bold text-gray-200">Task Manager</h1>
       <button
         onClick={logout}
-        className="bg-red-500 text-white px-4 py-1 rounded"
+        className="bg-red-600 text-gray-200 px-4 py-1 rounded"
       >
         Logout
       </button>
