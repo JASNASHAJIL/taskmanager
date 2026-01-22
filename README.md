@@ -74,7 +74,6 @@ Backend:
 - Express.js
 - MongoDB
 - JWT
-
 - bcrypt
 
 ---
