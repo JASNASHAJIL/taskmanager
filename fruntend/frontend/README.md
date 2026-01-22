@@ -1,16 +1,94 @@
-# React + Vite
+[5:41 am, 22/01/2026] Hh: Step 1: Complete Your MERN Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Make sure the following are working:
 
-Currently, two official plugins are available:
+User Registration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User Login using JWT
 
-## React Compiler
+CRUD operations (Add, Edit, Delete, Complete tasks)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend + Backend running properly
 
-## Expanding the ESLint configuration
+Step 2: Take Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Take screenshots of important pages:
+
+Register page
+
+Login page
+
+Task dashboard (task list)
+
+Add / Edit task page
+
+Step 3: Create a Screenshots Folder
+
+Inside your main project folder, create a folder named:
+
+screenshots
+
+
+Example structure:
+
+task-manager-app/
+├── frontend/
+├── backend/
+├── screenshots/
+│   ├── register.png
+│   ├── login.png
+│   ├── dashboard.png
+│   └── add-task.png
+└── README.md
+
+Step 4: Add Screenshots to README.md
+
+Open README.md and add the screenshots using Markdown syntax.
+
+Screenshot section example:
+## Screen…
+[5:42 am, 22/01/2026] Hh: # Task Manager App
+
+## Description
+This is a MERN stack Task Manager application.
+Users can register, login using JWT authentication, and manage their tasks.
+
+---
+
+## Features
+- User Register and Login
+- JWT Authentication
+- Add, Edit, Delete Tasks
+- Mark Tasks as Completed
+
+---
+
+## Tech Stack
+Frontend:
+- React
+- Axios
+- React Router
+
+Backend:
+- Node.js
+- Express.js
+- MongoDB
+- JWT
+
+- bcrypt
+
+---
+
+## How to Run
+
+### Backend
+```bash
+cd backend
+npm install
+npm run dev
+Frontend
+bash
+Copy code
+cd frontend
+npm install
+npm start
