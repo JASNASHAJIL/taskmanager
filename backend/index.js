@@ -9,12 +9,30 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+/* =======================
+   CORS CONFIG (FIXED)
+======================= */
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://taskmanager-cykw.vercel.app",
+    ],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
+/* =======================
+   ROUTES
+======================= */
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
+/* =======================
+   ERROR HANDLER
+======================= */
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
